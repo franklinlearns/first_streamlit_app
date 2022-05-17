@@ -23,8 +23,8 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # display the table in the page
 streamlit.dataframe(fruits_to_show)
 
-
-streamlit.text(fruity_vice_response)
+streamlit.header("Fruityvice Fruit Advice")
+streamlit.text(fruity_vice_response.json())
 
 
 
